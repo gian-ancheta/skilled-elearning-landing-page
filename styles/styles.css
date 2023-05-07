@@ -1,0 +1,241 @@
+/* General - Box-sizing */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;  
+}
+
+
+
+/* General - Text */
+
+html {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, dt {
+  font-weight: 800;
+}
+
+
+
+/* General - Colors */
+
+p, dd {
+  color: hsl(233, 10%, 56%);
+}
+
+
+
+/* General - Backgrounds */
+
+body {
+  background: linear-gradient(#fff, #f0f1ff);
+}
+
+
+
+/* General - Layout */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  max-width: calc(0.8 * 1440px);
+}
+
+
+
+/* Components - Hero section */
+
+.hero-section {
+  max-width: calc(0.8 * 1440px);
+}
+
+.hero-image {
+  background-image: url(../assets/image-hero-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10em;
+}
+
+
+
+/* Components - Links */
+
+.get-started-link {
+  display: inline-block;
+  background: linear-gradient(#FF6F48, #F02AA6);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 1em 2em;
+}
+
+.get-started-link--header {
+  background: none;
+  background-color: hsl(243, 53%, 16%);
+}
+
+
+/* Components - Card */
+
+.card-section {
+  max-width: calc(0.8 * 1440px);
+}
+
+.card-section__heading {
+  color: white;
+  background: linear-gradient(#FF6F48, #F02AA6);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.card__heading {
+  font-size: 1.25rem;
+}
+
+.card__body {
+  margin: 0;
+}
+
+.card__link {
+  color: hsl(341, 92%, 62%);
+  text-decoration: none;
+}
+
+
+
+/* Components - Logo */
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+/* For screen sizes of 768px and above. */
+
+@media (min-width: 768px) {
+
+/* General - Backgrounds */
+
+body {
+  background-image: url(../assets/image-hero-tablet.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -5em right -20em;
+}
+
+
+
+/* Sections - Header Section */
+
+header {
+  margin: auto;
+}
+
+/* Sections - Hero Section */
+
+.hero-section {
+  display: block;
+  margin: 9em auto 0;
+}
+
+.hero-image {
+  background-image: none;
+}
+
+/* Sections - Card Section */
+  
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card-section__heading {
+  flex: 50%;
+}
+
+
+
+/* Components - Card */
+
+.card {
+  flex: 50%;
+}
+}
+
+
+
+/* For screen sizes of 1440px and above. */
+
+@media (min-width: 1440px) {
+
+/* General - Text */
+
+html {
+  font-size: 1.125rem;
+}
+
+
+
+/* General - Backgrounds */
+
+body {
+  background-image: url(../assets/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -12.5em right -30em;
+}
+
+/* Sections - Header Section */
+
+/* Sections - Hero Section */
+
+.hero-section {
+  padding-right: 30em;
+}
+
+.hero-section__heading {
+  font-size: 3.5rem;
+}
+
+.hero-section__body {
+  padding-right: 10em;
+  margin: -1em 0 4em;
+}
+
+/* Sections - Cards Section */
+
+.card-section__heading {
+  flex: 30%;
+}
+
+/* Components - Card */
+
+.card {
+  flex: 30%;
+}
+
+}
